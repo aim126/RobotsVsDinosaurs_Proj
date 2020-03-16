@@ -10,6 +10,9 @@ namespace RobotsVSDinosaurs
     {
         static void Main(string[] args)
         {
+
+            Battelfield battelfield = new Battelfield();
+            battelfield.SimulateBattle();
         }
     }
 }

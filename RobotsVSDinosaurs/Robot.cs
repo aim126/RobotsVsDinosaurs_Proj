@@ -6,27 +6,107 @@ using System.Threading.Tasks;
 
 namespace RobotsVSDinosaurs
 {
-    class Robot
-        
+    public class Robot
     {
         //Member Variables
         public string name;
-        public string health;
-        public string powerlevel ;
-        public string Weapon;
-        public string attackpower; 
-     }
+        public int health;
+        public int powerlevel;
+        //public string Weapon;
+        public string attackpower;
 
-        //Constarctor
-        public robot ()
+
+        //Constarutor
+        public Robot()
         {
-           name = "roby the robot";
-           health = "100 points" ;
-           powerlevel  = "10 bars " ;
-           Weapon = Sword ;
-           attackpower = "strike hard"
-
-
+            name = "Roby";
+            health = 100;
+            powerlevel = 5;
+            //Weapon = "Sword" ;
+            attackpower = "strike hard";
         }
-         
+            // member method check health and power level and after attack and print to console.
+            public void RobotAttack(Robot robot, Dinosaur dinosaur)
+
+            {
+                dinosaur.health = dinosaur.health- robot.powerlevel;
+                dinosaur.energy--;
+                dinosaur.attackpower--;
+
+
+
+
+
+
+            }            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+            
+
+           
+
+
+           
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+       
+
+        
+    
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RobotsVSDinosaurs
 {
-    class Class2
+    class Weapon
     {
     }
 }

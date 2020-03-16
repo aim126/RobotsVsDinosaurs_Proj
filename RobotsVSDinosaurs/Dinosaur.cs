@@ -6,16 +6,33 @@ using System.Threading.Tasks;
 
 namespace RobotsVSDinosaurs
 {
-    class Dinosaur
+    public class Dinosaur
     {
         //Member Variables
-        public string health;
-        public string energy;
-        public string attackpower ;
+        public int health;
+        public int energy;
+        public int attackpower;
+
+
+        //Constructor
+        public Dinosaur()
+
+        {
+            health = 100;
+            energy =  5  ;
+            attackpower = 5;
+       }
+
+        //Member Method
+        //display  health  energy  and atack power  after attack ,   print  to consol.
+        public void DinoAttack(Dinosaur dinosaur, Robot robot)
+        {
+            robot.health = robot.health - dinosaur.attackpower;
+            robot.powerlevel--;
+            dinosaur.energy--;
+        }
+
 
     }
-
-
-
 
 }

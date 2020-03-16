@@ -6,7 +6,53 @@ using System.Threading.Tasks;
 
 namespace RobotsVSDinosaurs
 {
-    class Class2
+    public class Herd
     {
-    }
+        Dinosaur Dinosaur1 = new Dinosaur();
+        Dinosaur Dinosaur2 = new Dinosaur();
+        Dinosaur Dinosaur3 = new Dinosaur();
+        public List<Dinosaur> dinosaursHerd;
+        public Herd()
+        {
+            dinosaursHerd = new List<Dinosaur>();
+            dinosaursHerd.Add(Dinosaur1);
+            dinosaursHerd.Add(Dinosaur2);
+            dinosaursHerd.Add(Dinosaur3);
+        }
+        
+       
+    }          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
+
+
+
+
+    
+
+    
